@@ -1,0 +1,129 @@
+.projects {
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: rgb(232, 241, 250);
+}
+
+.projects-content {
+  width: 100%;
+}
+
+.projects-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.projects-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #a8598d;
+}
+
+.projects-content p {
+  font-size: 20px;
+  margin: 20px 0 40px;
+  color: black;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.project-box {
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.project-box:hover>.project-title:after,
+.project-box:hover>.project-title:before {
+  width: 35px;
+}
+
+.project-box:hover .img {
+  transform: translateY(-10px);
+}
+
+.project-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: #2ecc71;
+  transition: 0.5s;
+}
+
+.project-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #2ecc71;
+  transition: 0.5s;
+}
+
+.project-title h3 {
+  color: #a8598d;
+  margin-top: 1rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.project-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 45px 0 0 45x;
+}
+
+.project-icon {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.project-box:hover .project-img {
+  transform: translateY(-10px);
+}

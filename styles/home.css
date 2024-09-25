@@ -1,0 +1,131 @@
+.home {
+  width: 100%;
+  padding-top: 8%;
+}
+
+.home h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 0%;
+  text-align: center;
+}
+
+.home-content {
+  width: 100%;
+  margin: 10%;
+  margin-top: 5%;
+  margin-left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-content img {
+  width: 28%;
+  border-radius: 10%;
+  margin-right: 5%;
+  padding: 25px;
+}
+
+.home-content img:hover {
+  border-radius: 20%;
+  border: 2px solid #a8598d;
+}
+
+.home-details {
+  width: 50%;
+  padding: 30px;
+}
+
+.home-details:hover {
+  border-radius: 2%;
+  border: 2px solid #a8598d;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 5%;
+  color: rgb(227, 26, 210);
+}
+
+.home-content h1:hover {
+  text-decoration: none;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #a8598d;
+}
+
+.home-content p {
+  font-size: 20px;
+  margin: 20px 0 40px;
+  color: black;
+  line-height: 1.25;
+}
+
+.home-content .btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.btn-box a {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  background-color: #a8598d;
+  border: 2px solid #a8598d;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #faf6fb;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn-box a:hover {
+  color: #a8598d;
+}
+
+.btn-box a:nth-child(2) {
+  background-color: #E0CCE8;
+  color: #a8598d;
+  margin-left: 40px;
+}
+
+.btn-box a:nth-child(2):hover {
+  color: #E0CCE8;
+}
+
+.btn-box a:nth-child(2)::before {
+  background-color: #a8598d;
+}
+
+.btn-box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #E0CCE8;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+}
